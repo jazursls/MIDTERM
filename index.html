@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
         <img src="assets/portfolio-logo.png" alt="Jaz's Portfolio">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+         <nav>
+            <a href="#home" class="nav-button">Home</a>
+            <a href="#about" class="nav-button">About</a>
+            <a href="#projects" class="nav-button">Projects</a>
+            <a href="#skills" class="nav-button">Skills</a>
+            <a href="#contact" class="nav-button">Contact</a>
         </nav>
     </header>
+   
 
     <main>
         <section id="home">
@@ -28,20 +30,20 @@
         <section id="about">
             <h2>About Me</h2>
             <p>I am a multimedia artist with years of experience with video editing and filmmaking.
-            <br>I'm currently a sophomore at Far Eastern University Institute of Technology, taking
-            <br>Bachelor of Multimedia Arts. I have so far worked on various projects, including some
-            <br>3 short films, event videography, and game level designing.</p>
+            I'm currently a sophomore at Far Eastern University Institute of Technology, taking
+            Bachelor of Multimedia Arts. I have so far worked on various projects, including some
+            3 short films, event videography, and game level designing.</p>
 
             <p>My journey as a multimedia artist began in second-year high school, where my friend
-            <br>asked me if I would be interested to write a script for a fan-made Spider-Man film.
-            <br>I accepted the offer, and though we only managed to partially finish the script, that
-            <br>experience sparked my love for the art of filmmaking and storytelling. Since then, I
-            <br>have been honing my skills in video editing, sound design, and ability to create films.</p>
+            asked me if I would be interested to write a script for a fan-made Spider-Man film.
+            I accepted the offer, and though we only managed to partially finish the script, that
+            experience sparked my love for the art of filmmaking and storytelling. Since then, I
+            have been honing my skills in video editing, sound design, and ability to create films.</p>
 
             <p>Although me and my friend's paths diverged as the years went on, we still frequently
-            <br>collaborate on projects, even resulting in a short film that we submitted to the
-            <br>2025 Cinegoma Film Festival. Now, while also balancing my studies, I strive to 
-            <br>continue creating all sorts of projects, no matter how big or small. </p>
+            collaborate on projects, even resulting in a short film that we submitted to the
+            2025 Cinegoma Film Festival. Now, while also balancing my studies, I strive to 
+            continue creating all sorts of projects, no matter how big or small. </p>
         </section>
 
         <article id="education">
@@ -140,10 +142,15 @@
             <form>
                 <label for="comment">Your Comment:</label>
                 <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your comment here..."></textarea>
+                <br>
                 <button type="submit">Submit</button>
             </form>
         </article>
-        
+
     </main>
+
+    <footer>
+        <p>&copy; 2026 Reivin "Jaz" Rosales. All rights reserved.</p>
+    </footer>
 </body>
 </html>
