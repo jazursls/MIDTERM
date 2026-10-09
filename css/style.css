@@ -133,6 +133,7 @@ main > section, main > article {
     background-color: var(--foreground-color);
     border: 1px solid var(--foreground-color);
     border-radius: var(--spacing-medium);
+    box-shadow: 0 4px 8px rgb(46, 46, 46);
 }
 
 #home {
@@ -254,4 +255,142 @@ footer {
     text-align: center;
     background-color: var(--foreground-color);
     padding: var(spacing-small);
+}
+
+@media screen and (max-width: 768px)  {
+
+    header  {
+        position:relative;
+        width: 100%;
+        height: auto;
+        padding: var(--spacing-medium) var(--spacing-medium);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: var(--spacing-small);
+    }
+
+    header img {
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: var(--spacing-small);
+        width: auto;
+        flex: 1;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: var(--text-size-small);
+        white-space: nowrap;
+    }
+
+    .nav-button {
+        font-size: var(--text-size-small);
+    }
+
+    main {
+        margin: 0;
+        width: 100%;
+        max-width: none;
+        padding: var(--spacing-medium);
+    }
+
+    #about {
+        grid-column: 1 / -1;
+    padding: 50px var(--spacing-large);
+    }
+
+    #education {
+        grid-column: 1 / -1;
+    padding: 50px var(--spacing-large);
+    }
+
+    #contact {
+        grid-column: 1 / -1;
+    padding: 50px var(--spacing-large);
+    }
+
+    #feedback {
+        grid-column: 1 / -1;
+    padding: 50px var(--spacing-large);
+    }
+
+    footer {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+main {
+    padding: 10px;
+    gap: var(--spacing-small);
+}
+
+main > section, main > article {
+    padding: var(--spacing-small);
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+
+header{
+    padding: var(--spacing-small) var(--spacing-small);
+    gap: var(--spacing-small);
+    align-items: center;
+}
+
+header img {
+    width: 200px;
+    max-width: 100%;
+}
+
+nav {
+    width: 100%;
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filmsrow {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-small);
+}
+
+#skills {
+    min-width: 0;
+}
+
+#skills table {
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
+}
+
 }
